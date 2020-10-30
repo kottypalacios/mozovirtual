@@ -125,5 +125,10 @@
           }
         }
       }
-    }},
+    }
+  },
+  "defaultProject": "mozovirtual",
+  "cli": {
+    "analytics": "7c8bb1ab-e840-49f2-9366-618071d01653"
+  }
 }

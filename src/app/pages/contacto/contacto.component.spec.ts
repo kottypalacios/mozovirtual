@@ -15,6 +15,7 @@ describe('ContactoComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ContactoComponent);
+    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
