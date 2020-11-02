@@ -1,0 +1,37 @@
+ul{
+    list-style: none;
+    list-style-type: none;
+}
+
+.img-caracteristica{
+    background-image: url('../../../assets/img/img-caracteristica.png');
+    height: 100vh;
+}
+
+.parallax{
+    background-size:cover;
+    background-attachment: fixed;
+}
+.mat-icon {
+    font-size: 50px;
+}
+
+h1{
+    font-size: 300%;
+}
+
+h2{
+    font-size: 200%;
+}
+
+.transparencia{
+    background-color: #222222;
+}
+
+.logos-caracteristica{
+    font-size: 125px;
+}
+
+.btn-primary{
+    background-color: #3C91E6;
+}
