@@ -1,17 +1,44 @@
 .sidenav-container {
   height: 100%;
+  
 }
 
-.sidenav {
+.sidenav, .button-menu {
   width: 200px;
+ 
+  
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
+  
 }
-
+.spacer-toolbar{
+  flex: 1 1 auto;
+}
+#opcion-menu{
+  display: inline-flex;
+  
+}
+.mat-toolbar a{
+  color: white;
+}
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
+
+}
+@media (max-width : 865px){
+  #opcion-menu{
+    display: none;
+  }
+ 
+}
+@media (min-width : 865px){
+  .sidenav, .button-menu{
+    
+    display: none;
+  }
+  
 }

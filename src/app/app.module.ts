@@ -11,7 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarPrincipalComponent } from './navbar-principal/navbar-principal.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { MaterialComponentsModule } from './material-components/material-components.module';
+import { HeaderComponent } from './componets/header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { MaterialComponentsModule } from './material-components/material-compone
     CaracteristicaComponent,
     ContactoComponent,
     NavbarPrincipalComponent,
+    HeaderComponent,
 
   ],
   imports: [
@@ -28,7 +32,8 @@ import { MaterialComponentsModule } from './material-components/material-compone
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MaterialComponentsModule
+    MaterialComponentsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
