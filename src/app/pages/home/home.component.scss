@@ -1,21 +1,27 @@
 .img-home{
     background-image: url('../../../assets/img/img-home.png');
-    height: 100vh;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-position: 10px -10px;
 }
-
-.img-caracteristica{
-    background-image: url('../../../assets/img/img-caracteristica.png');
-    height: 100vh;
+@media (min-width: 550px) {
+    .img-home {
+        height: 130%;
+    }
+    .parallax{
+        background-size: 140%;
+    }
+}
+@media (max-width: 550px) {
+    .parallax{
+        background-size: 140%;
+    }
 }
 
 .parallax{
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 }
-.mat-icon {
-    font-size: 50px;
-}
-
-h1{
+.material-icons {
     font-size: 100px;
 }
