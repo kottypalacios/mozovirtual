@@ -27,18 +27,17 @@
       
 
       <mat-nav-list id="opcion-menu">
-        <a mat-list-item routerLink = "home">Home</a>
-        <a mat-list-item routerLink = "mozovirtual">MozoVirtual</a>
-        <a mat-list-item routerLink = "caracteristica">Caracteristicas</a>
-        <a mat-list-item routerLink = "contacto">Contacto</a>
+        <a mat-list-item href="#home">Home</a>
+        <a mat-list-item href = "#mozovirtual">MozoVirtual</a>
+        <a mat-list-item href = "#caracteristica">Caracteristicas</a>
+        <a mat-list-item href="#contacto">Contacto</a>
       </mat-nav-list>
 
-
-
-
     </mat-toolbar>
-
-    <!-- Add Content Here -->
+    <app-home></app-home>
+    <app-mozovirtual></app-mozovirtual>
+    <app-caracteristica></app-caracteristica>
+    <app-contacto></app-contacto>
    
   </mat-sidenav-content>
 </mat-sidenav-container>
