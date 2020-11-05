@@ -1,3 +1,4 @@
+
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -13,7 +14,9 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
+      <span>mozovirtual</span>
+      <span class="spacer-toolbar"></span>
+      <button class="button-menu"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
@@ -21,12 +24,21 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>mozovirtual</span>
+      
+
+      <mat-nav-list id="opcion-menu">
+        <a mat-list-item routerLink = "home">Home</a>
+        <a mat-list-item routerLink = "mozovirtual">MozoVirtual</a>
+        <a mat-list-item routerLink = "caracteristica">Caracteristicas</a>
+        <a mat-list-item routerLink = "contacto">Contacto</a>
+      </mat-nav-list>
+
+
+
+
     </mat-toolbar>
 
     <!-- Add Content Here -->
-    <ng-content>
-
-    </ng-content>
+   
   </mat-sidenav-content>
 </mat-sidenav-container>
