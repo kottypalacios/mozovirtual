@@ -1,9 +1,12 @@
+
 .img-home{
     background-image: url('../../../assets/img/img-home.png');
     height: 110%;
     background-repeat: no-repeat;
     background-position: 10px -10px;
 }
+
+
 @media (min-width: 550px) {
     .img-home {
         height: 130%;
