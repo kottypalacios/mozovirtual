@@ -1,11 +1,16 @@
 
 .img-home{
-    background-image: url('../../../assets/img/img-home.png');
+    background-image: url('../../../assets/img/home.png');
     height: 110%;
     background-repeat: no-repeat;
-    background-position: 10px -10px;
 }
-
+.parallax{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.material-icons {
+    font-size: 100px;
+}
 
 @media (min-width: 550px) {
     .img-home {
@@ -19,12 +24,4 @@
     .parallax{
         background-size: 140%;
     }
-}
-
-.parallax{
-    background-size: cover;
-    background-attachment: fixed;
-}
-.material-icons {
-    font-size: 100px;
 }
