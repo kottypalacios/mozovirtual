@@ -1,24 +1,39 @@
+mat-sidenav-content{
+
+  overflow: auto;
+  padding: 0;
+  margin: 0 auto;
+
+}
+.mat-drawer-content{
+  width: 100%;
+}
+.sidenav{
+  width: 100%;
+  margin: 0;
+
+}
 .sidenav-container {
   height: 100%;
-  
+
 }
 
 .sidenav, .button-menu {
   width: 200px;
- 
-  
+
+
 }
 
 .sidenav .mat-toolbar {
   background: inherit;
-  
+
 }
 .spacer-toolbar{
   flex: 1 1 auto;
 }
 #opcion-menu{
   display: inline-flex;
-  
+
 }
 .mat-toolbar a{
   color: white;
@@ -33,12 +48,12 @@
   #opcion-menu{
     display: none;
   }
- 
+
 }
 @media (min-width : 865px){
   .sidenav, .button-menu{
-    
+
     display: none;
   }
-  
+
 }
