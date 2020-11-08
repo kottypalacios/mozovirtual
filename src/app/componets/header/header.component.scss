@@ -13,12 +13,18 @@
   transition: padding 0.3s linear;
   -webkit-transition: padding 0.3s linear;
   z-index: 999;
+
 }
 .navbar > .container {
   height: auto;
+
+}
+.top-navbar a{
+  text-decoration: none;
 }
 .navbartop-btn:hover .mat-button-focus-overlay {
   display: none;
+
 }
 
 .navbar:not(.navbar-fixed) .navbartop-btn .mat-button-ripple {
@@ -71,6 +77,7 @@
   .navbar {
     padding: 0;
   }
+
   .navbar > .container {
       height: 60px;
       padding: 0;
