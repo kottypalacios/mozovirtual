@@ -4,8 +4,9 @@ ul{
 }
 
 .img-caracteristica{
-    background-image: url('../../../assets/img/img-caracteristica.png');
+    background-image: url('../../../assets/img/caracteristicas.png');
     height: 100vh;
+    overflow: hidden;
 }
 
 .parallax{
@@ -21,7 +22,7 @@ h1{
 }
 
 h2{
-    font-size: 200%;
+    font-size: 4em;
 }
 
 .transparencia{
