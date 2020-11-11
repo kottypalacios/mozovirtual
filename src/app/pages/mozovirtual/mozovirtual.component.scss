@@ -1,4 +1,9 @@
-
+#mozovirtual{
+  height: 100vh;
+}
+.info-row{
+  margin-top: 15%;
+}
 .img-mozovirtual{
     background-image: url('../../../assets/img/mozovirtual.png');
     height: 110%;
@@ -36,7 +41,7 @@ h2{
 
 .transparencia{
     background-color: #222222;
-    
+
 }
 .contenedor-mozo{
     background: rgba(0,0,0,0.6);

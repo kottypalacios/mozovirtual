@@ -1,3 +1,7 @@
+#contacto{
+  height: 100vh;
+
+}
 ul{
     list-style: none;
     list-style-type: none;
@@ -5,7 +9,7 @@ ul{
 
 .img-contacto{
     background-image: url('../../../assets/img/contacto.png');
-    height: 100vh;
+
 }
 
 .parallax{
@@ -34,6 +38,7 @@ h2{
 
 .btn-primary{
     background-color: #3C91E6;
+    margin-bottom: 25px;
 }
 .contenedor-mozo{
     background: rgba(0,0,0,0.6);
@@ -41,6 +46,8 @@ h2{
     height: 100%;
     max-width: 900px;
     margin: auto;
+    margin-bottom: 30px;
+
 }
 img{
     min-height: 150%;
