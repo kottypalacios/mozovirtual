@@ -1,17 +1,24 @@
-<mat-toolbar color="primary">
-    <div id="logo">
-       <h1>MozoVirual</h1>
-    </div> 
-    <span class="spacer"></span> 
-    
-    <div id="menu-option">
-        <button mat-button routerLink="home">Home</button>
-        <button mat-button>MozoVirtual</button>
-        <button mat-button>Caracteristicas</button>
-        <button mat-button>Contacto</button>
-        <mat-icon mat-icon-button>menu</mat-icon>
-    </div>
+<header class="navbar"  [ngClass]="{'navbar-fixed': isFixedNavbar}">
 
-</mat-toolbar>
+  <div class="container" fxLayout="row wrap" fxLayoutAlign="start center">
+    <div class="navbar-logo">
+      <!--<a routerLink="/">MozoVirtual</a> -->
+      <img src="../assets/img/logo-transparente.png" id="logo-menu">
+   </div>
+    <div class="navbar-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
 
-<!--<p *ngIf="deviceXs">HEADER</p>-->
+        <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+           <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+        </button>
+     </div>
+     <div fxFlex class="top-navbar">
+        <span fxFlex></span>
+        <a mat-button href="#home" class="navbartop-btn" ><strong>Home</strong></a>
+        <a mat-button href="#mozovirtual" class="navbartop-btn" ><strong>MozoVirtual</strong></a>
+        <a mat-button href="#caracteristicas" class="navbartop-btn" ><strong>Caracteristicas</strong></a>
+        <a mat-button href="#contacto" class="navbartop-btn" ><strong>Contacto</strong></a>
+     </div>
+  </div>
+</header>
+
+

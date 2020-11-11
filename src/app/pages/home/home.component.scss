@@ -1,27 +1,87 @@
-body{
-    margin: 0;
-    padding: 0;
+
+.logo-header{
+  background-image: url(../../../assets/img/img-home.png);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
 }
-.img-home{
+.contenedor-banner{
+  margin-top: 50px;
+  width: 85%;
+  text-align: center;
+  display: inline-block;
+}
+.contenedor-banner .row img{
+  width: 50%;
+  min-width: 400px;
+  margin: auto;
+}
+.text-banner{
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  color: white;
+}
+.text-banner h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 1;
+  text-shadow: 5px 5px 8px  #000000 ;
+    span {
+      color: #ff8700;
+    }
+
+}
+
+@media (max-width: 900px) {
+  .text-banner{
+    width: 100%;
+  }
+}
+
+
+/*.img-home{
     background-image: url('../../../assets/img/img-home.png');
     height: 100vh;
     margin: 0;
     padding: 0;
 }
+=======
 
-.img-caracteristica{
-    background-image: url('../../../assets/img/img-caracteristica.png');
-    height: 100vh;
+.img-home{
+    background-image: url('../../../assets/img/home.png');
+    height: 110%;
+    background-repeat: no-repeat;
 }
-
 .parallax{
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 }
-.mat-icon {
-    font-size: 50px;
-}
-
-h1{
+.material-icons {
     font-size: 100px;
 }
+
+<<<<<<< HEAD
+h1{
+    font-size: 100px;
+}*/
+@media (min-width: 550px) {
+    .img-home {
+        height: 130%;
+    }
+    .parallax{
+        background-size: 140%;
+    }
+}
+@media (max-width: 550px) {
+    .parallax{
+        background-size: 140%;
+    }
+}
+

@@ -1,11 +1,15 @@
+#contacto{
+  height: 100vh;
+
+}
 ul{
     list-style: none;
     list-style-type: none;
 }
 
 .img-contacto{
-    background-image: url('../../../assets/img/img-contacto.png');
-    height: 100vh;
+    background-image: url('../../../assets/img/contacto.png');
+
 }
 
 .parallax{
@@ -34,4 +38,18 @@ h2{
 
 .btn-primary{
     background-color: #3C91E6;
+    margin-bottom: 25px;
+}
+.contenedor-mozo{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+img{
+    min-height: 150%;
+    position: 500px 0px;
 }

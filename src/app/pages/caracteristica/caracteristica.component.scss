@@ -1,11 +1,15 @@
+#caracteristicas{
+  height: 100vh;
+}
 ul{
     list-style: none;
     list-style-type: none;
 }
 
 .img-caracteristica{
-    background-image: url('../../../assets/img/img-caracteristica.png');
+    background-image: url('../../../assets/img/caracteristicas.png');
     height: 100vh;
+    overflow: hidden;
 }
 
 .parallax{
@@ -21,7 +25,7 @@ h1{
 }
 
 h2{
-    font-size: 200%;
+    font-size: 4em;
 }
 
 .transparencia{
@@ -34,4 +38,15 @@ h2{
 
 .btn-primary{
     background-color: #3C91E6;
+}
+
+.contenedor-mozo{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+p, ul{
+    font-size: 1.2em;
 }

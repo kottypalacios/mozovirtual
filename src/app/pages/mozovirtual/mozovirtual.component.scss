@@ -1,15 +1,34 @@
-
-.img-caracteristica{
-    background-image: url('../../../assets/img/img-mozovirtual.png');
-    height: 100vh;
+#mozovirtual{
+  height: 100vh;
 }
-
+.info-row{
+  margin-top: 15%;
+}
+.img-mozovirtual{
+    background-image: url('../../../assets/img/mozovirtual.png');
+    height: 110%;
+    background-repeat: no-repeat;
+}
 .parallax{
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 }
-.mat-icon {
-    font-size: 50px;
+.material-icons {
+    font-size: 100px;
+}
+
+@media (min-width: 550px) {
+    .img-mozovirtual {
+        height: 130%;
+    }
+    .parallax{
+        background-size: 140%;
+    }
+}
+@media (max-width: 550px) {
+    .parallax{
+        background-size: 140%;
+    }
 }
 
 h1{
@@ -22,7 +41,7 @@ h2{
 
 .transparencia{
     background-color: #222222;
-    
+
 }
 .contenedor-mozo{
     background: rgba(0,0,0,0.6);
@@ -30,4 +49,10 @@ h2{
     height: 100%;
     max-width: 900px;
     margin: auto;
+}
+p{
+    font-size: 1.2em;
+}
+.limite{
+    max-height: 50%;
 }
