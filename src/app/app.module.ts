@@ -15,6 +15,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialComponentsModule } from './material-components/material-components.module';
 import { HeaderComponent } from './componets/header/header.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { PrestashopService } from './services/prestashop.service';
+import { LandingComponent } from './pages/landing/landing.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,8 @@ import { HeaderComponent } from './componets/header/header.component';
     ContactoComponent,
     NavbarPrincipalComponent,
     HeaderComponent,
+    MenuComponent,
+    LandingComponent,
 
   ],
   imports: [
@@ -33,9 +39,10 @@ import { HeaderComponent } from './componets/header/header.component';
     BrowserAnimationsModule,
     LayoutModule,
     MaterialComponentsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ PrestashopService],
   bootstrap: [AppComponent]
 })
 
