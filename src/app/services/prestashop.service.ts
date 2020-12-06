@@ -22,5 +22,5 @@ export class PrestashopService {
     console.log(url);
     
     return this._http.get(url);
-  }
+    }
 }

@@ -8,10 +8,10 @@ import { PrestashopService } from 'src/app/services/prestashop.service';
 })
 export class MenuComponent implements OnInit {
 
-  productos = 'hola';
+  productos;
 
   constructor(
-    private _presta: PrestashopService
+    public _presta: PrestashopService
   ) { }
 
   ngOnInit(): void {
@@ -20,10 +20,18 @@ export class MenuComponent implements OnInit {
         console.log(resp);
         
         this.productos = resp['products'];
+        this.productos.forEach(item=>{
+          item.imagen = "http://localhost/mozovirtual/" + item.id_default_image + "-large_default/" + item.name[0].value.replace(/ /g,'_') + ".jpg";
+        })
         
       }, error => console.log(error)
       
     );
+  }
+
+
+  pedir(id_producto){
+    alert('Producto ' + id_producto);
   }
 
 }
