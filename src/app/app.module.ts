@@ -19,6 +19,8 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { PrestashopService } from './services/prestashop.service';
 import { LandingComponent } from './pages/landing/landing.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SoapComponent } from './pages/soap/soap/soap.component';
+import { NgxSoapModule } from 'ngx-soap';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     MenuComponent,
     LandingComponent,
+    SoapComponent,
 
   ],
   imports: [
@@ -40,7 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     LayoutModule,
     MaterialComponentsModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSoapModule
   ],
   providers: [ PrestashopService],
   bootstrap: [AppComponent]
