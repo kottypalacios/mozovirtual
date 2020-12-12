@@ -1,35 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactoComponent } from './pages/contacto/contacto.component';
-import { CaracteristicaComponent } from './pages/caracteristica/caracteristica.component';
-import { HomeComponent } from './pages/home/home.component';
-import { MozovirtualComponent } from './pages/mozovirtual/mozovirtual.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { SoapComponent } from './pages/soap/soap/soap.component';
 
 const routes: Routes = [
  {
     path: '',
-    component: HomeComponent
+    component: LandingComponent
   },
+  
   {
-    path: 'mozovirtual',
-    component: MozovirtualComponent
+    path: 'menu',
+    component: MenuComponent
   },
-  {
-    path: 'contacto',
-    component: ContactoComponent
-  },
-  {
-    path: 'caracteristica',
-    component: CaracteristicaComponent
-  },
-  {
-    path: '**',
-    component: HomeComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  }
+  {path:'soap', component: SoapComponent}
 ];
 
 @NgModule({

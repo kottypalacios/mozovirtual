@@ -20,7 +20,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
   ngOnInit(){
     this.mediaSub = this.mediaObserver.media$.subscribe((result:MediaChange)=>{
-      console.log(result.mqAlias);
+      // console.log(result.mqAlias);
 
       this.deviceXs = result.mqAlias ==='xs' ? true : false;
       });

@@ -21,7 +21,11 @@ export class MenuComponent implements OnInit {
         
         this.productos = resp['products'];
         this.productos.forEach(item=>{
+<<<<<<< HEAD
           item.imagen = "http://vqinfohy.lucusvirtual.es/" + item.id_default_image + "-large_default/" + item.name[0].value.replace(/ /g,'_') + ".jpg";
+=======
+          item.imagen = "http://localhost/mozovirtual/" + item.id_default_image + "-large_default/" + item.name[0].value.replace(/ /g,'_') + ".jpg";
+>>>>>>> origin/main
         })
         
       }, error => console.log(error)

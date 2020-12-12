@@ -1,0 +1,12 @@
+
+<div class="menu-card-container">
+
+    <div class="card menu-card" style="width: 18rem;" *ngFor="let item of productos">
+        <img src="{{item.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name[0].value }}</h5>
+            <p class="card-text">{{item.price | currency}}</p>
+            <a  (click)="pedir(item.id)" class="btn btn-primary d-block w-100">Pedir</a>
+        </div>
+    </div>
+</div>
