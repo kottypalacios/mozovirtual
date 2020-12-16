@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './pages/menu/menu.component';
 import { LandingComponent } from './pages/landing/landing.component';
-import { SoapComponent } from './pages/soap/soap/soap.component';
 
 const routes: Routes = [
  {
@@ -14,7 +13,6 @@ const routes: Routes = [
     path: 'menu',
     component: MenuComponent
   },
-  {path:'soap', component: SoapComponent}
 ];
 
 @NgModule({
